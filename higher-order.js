@@ -11,19 +11,19 @@ const repeatFn = (times, callback) => {
 // Test repeatFn
 const addButton = num => {
   const button = document.createElement('button');
-  button.innerText = `Button ${num}`;
+  button.innerText = `Button ${num+1}`;
   document.querySelector('body').appendChild(button);
 };
 repeatFn(6, addButton);
 
 
 // Another Test of repeatFn
-const toThePower = (num, pow) => {
-  let product = 1;
-  repeatFn(pow, () => {
-    product += product * num;
-  });
-  return product;
-};
+// const toThePower = (num, pow) => {
+//   let product = 1;
+//   repeatFn(pow, () => {
+//     product += product * num;
+//   });
+//   return product;
+// };
 
-console.log(toThePower(3, 3));
+// console.log(toThePower(3, 3));
